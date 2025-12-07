@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contact – Alley Pham</title>
+  <meta name="description" content="Contact MI349 student and web designer, Alley Pham, to discuss projects or collaboration.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Alley Pham</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page-main">
+    <section class="page-hero">
+      <div class="container narrow">
+        <h1>Contact</h1>
+        <p>
+          Have feedback on my MI349 work, want to chat about a project, or just say hi?
+          You can reach me using the info and form below.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <h2>Get in touch</h2>
+          <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/alleyphm" target="_blank" rel="noopener">LinkedIn · Alley Pham</a></p>
+          <p>
+            I'm always open to feedback on my code, design decisions, or how I present my work.
+            A short message with context helps me respond more thoughtfully.
+          </p>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <h2>Contact Form</h2>
+          <form class="contact-form" action="#" method="post">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required>
+            </div>
+
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button class="btn primary" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Alley Pham · Built for MI349 at Michigan State University.</p>
+      <p class="footer-tagline">Intentional design · Clear writing · Accessible web.</p>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>

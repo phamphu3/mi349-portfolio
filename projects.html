@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Projects – Alley Pham</title>
+  <meta name="description" content="Selected MI349 projects by Alley Pham, including an Everyday Carry site, crochet brand concept, and blog layout work.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Alley Pham</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page-main">
+    <section class="page-hero">
+      <div class="container narrow">
+        <h1>Projects</h1>
+        <p>
+          These projects represent my work across MI349 labs and the final project:
+          practicing structure, rhythm, and responsive design while writing copy that actually
+          says something useful.
+        </p>
+      </div>
+    </section>
+
+    <section class="projects-list">
+      <div class="container">
+        
+        <div class="card-grid">
+          <article class="card" id="edc">
+            <h2>Everyday Carry 11ty Site</h2>
+            <p>
+              A multi-page 11ty site exploring content structure for everyday carry items.
+              I practiced building templates, organizing content in collections,
+              and keeping the layout consistent across pages.
+            </p>
+            <p class="tags">11ty · Layout · Content</p>
+            <a href="https://m349-everyday-carry.netlify.app/" target="_blank" rel="noopener" class="card-link">View live site →</a>
+          </article>
+
+          <article class="card" id="keychain">
+            <h2>Keychain Brand Concept</h2>
+            <p>
+              A product-focused concept for a keychain brand. The goal was to highlight
+              product details with clear hierarchy, visuals, and calls-to-action.
+            </p>
+            <p class="tags">Branding · Visual Design · CTAs</p>
+            <a href="https://mi349-framework-lab.netlify.app/" target="_blank" rel="noopener" class="card-link">View live site →</a>
+          </article>
+
+          <article class="card" id="blog">
+            <h2>MI349 Blog Layout</h2>
+            <p>
+              A blog-style page where I experimented with typography scale, readable line length,
+              and spacing. The layout was designed to support longer reflective writing without
+              feeling heavy or overwhelming.
+            </p>
+            <p class="tags">Typography · Semantics · Readability</p>
+            <a href="https://peppy-gecko-d648a6.netlify.app/" target="_blank" rel="noopener" class="card-link">View live site →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Alley Pham · Built for MI349 at Michigan State University.</p>
+      <p class="footer-tagline">Intentional design · Clear writing · Accessible web.</p>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>

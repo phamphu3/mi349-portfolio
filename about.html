@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>About – Alley Pham</title>
+  <meta name="description" content="Learn more about MI349 student and web designer, Alley Pham from Michigan State University.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Alley Pham</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page-main">
+    <section class="page-hero">
+      <div class="container narrow">
+        <h1>About Me</h1>
+        <p>
+          I'm an Information Science student at Michigan State University, interested in how small,
+          intentional design decisions can make the web feel more understandable and human.
+        </p>
+      </div>
+    </section>
+
+    <section class="about-grid">
+      <div class="container about-inner">
+        <div class="about-media">
+          <img src="assets/img/about.png" alt="Portrait of Alley Pham" class="hero-img">
+        </div>
+
+        <div class="about-copy">
+          <h2>Overview</h2>
+          <p>
+            In MI349, I've learned to move from rough ideas and Figma wireframes to fully coded,
+            responsive pages. My work focuses on clean structure, thoughtful copy, and layouts that still
+            hold up on a small phone screen at 2a.m.
+          </p>
+
+          <h2>Skills & Tools</h2>
+          <ul>
+            <li>Semantic HTML5 and accessible structure</li>
+            <li>CSS, Flexbox, responsive grid layouts</li>
+            <li>Design systems and prototypes in Figma</li>
+            <li>Copywriting for portfolio and product pages</li>
+            <li>GitHub & Codespaces workflow, Netlify hosting</li>
+          </ul>
+
+          <h2>Design Principles I Use</h2>
+          <p>
+            MI349 emphasized clarity, hierarchy, and responsiveness. I try to:
+          </p>
+          <ul>
+            <li>Use type, color, and spacing to guide attention.</li>
+            <li>Keep content scannable with clear headings and short paragraphs.</li>
+            <li>Respect accessibility basics like contrast and proper alt text.</li>
+            <li>Design mobile-first, then enhance on larger screens.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Alley Pham · Built for MI349 at Michigan State University.</p>
+      <p class="footer-tagline">Intentional design · Clear writing · Accessible web.</p>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>

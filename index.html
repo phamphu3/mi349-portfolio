@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Alley Pham – Web & Information Design</title>
+  <meta name="description" content="Portfolio site for Alley Pham, Information Science student at Michigan State University focusing on web design, UX, and content strategy.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Alley Pham</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">MI349 · Final Portfolio</p>
+          <h1>Designing clear, grounded experiences on the web.</h1>
+          <p class="hero-text">
+            I'm <strong>Alley Pham</strong>, an Information Science student at Michigan State University.
+            In MI349 I've been building responsive, accessible sites that balance visual style,
+            thoughtful copy, and semantic HTML.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="projects.html">View MI349 Projects</a>
+            <a class="btn ghost" href="contact.html">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <img src="assets/img/myself.jpg" alt="Portrait of Alley Pham" class="hero-img">
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-projects">
+      <div class="container">
+        <header class="section-header">
+          <h2>Featured MI349 Work</h2>
+          <p>
+            A sample of class projects and labs that shaped how I think about layout,
+            accessibility, and content on the web.
+          </p>
+        </header>
+
+        <div class="card-grid">
+          <article class="card">
+            <h3>Everyday Carry 11ty Site</h3>
+            <p>
+              A multi-page 11ty site exploring layout, reusable templates,
+              and content structure for an everyday carry collection.
+            </p>
+            <p class="tags">11ty · Layout · Content Strategy</p>
+            <a href="projects.html#edc" class="card-link">View details →</a>
+          </article>
+
+          <article class="card">
+            <h3>Keychain Brand Concept</h3>
+            <p>
+              A product-focused concept site for a custom keychain brand,
+              emphasizing imagery, hierarchy, and calls-to-action.
+            </p>
+            <p class="tags">Branding · Visual Design · CTAs</p>
+            <a href="projects.html#keychain" class="card-link">View details →</a>
+          </article>
+
+          <article class="card">
+            <h3>MI349 Blog Layout</h3>
+            <p>
+              A blog-style layout experimenting with typography scale, vertical rhythm,
+              and scannable content blocks for longer writing.
+            </p>
+            <p class="tags">Typography · Semantics · Readability</p>
+            <a href="projects.html#blog" class="card-link">View details →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Alley Pham · Built for MI349 at Michigan State University.</p>
+      <p class="footer-tagline">Intentional design · Clear writing · Accessible web.</p>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
